@@ -262,13 +262,21 @@
   resolved "https://registry.yarnpkg.com/@equinor/eds-tokens/-/eds-tokens-0.5.5.tgz#d8f707ccc1c245a7e8b0155f90e0ec163079f488"
   integrity sha512-PserXGVxf5Q7Z0o/AypudGWdh9Vangct3dQZsgiERfqRj8+a+mU0ObRa6bMm+JouQRV3WktNPJVWMjjJf8jQbw==
 
-"@equinor/fusion-react-searchable-dropdown@^0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@equinor/fusion-react-searchable-dropdown/-/fusion-react-searchable-dropdown-0.1.0.tgz#980aa63a9899ba8a37ada1104f35f007a4a52a4d"
-  integrity sha512-MTQ+Plqvm00AxRIKAbl8z03lXL+fRLeATgioAPCQPb+3RXat5nx+TOvUFN0TXgcHlppbRVukIRdwU5xF1F/a9A==
+"@equinor/fusion-react-context-selector@^0.1.1":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@equinor/fusion-react-context-selector/-/fusion-react-context-selector-0.1.1.tgz#3212654415090b99818f123aa4622caf0ec3ed14"
+  integrity sha512-ghYHPdrd5/qksuFOx5UVGhjS/CskYw13mrtKd+havFXngYBOSPZXRMEZlMoTNe0ZDkFay895dRzZa+jffYnxzg==
+  dependencies:
+    "@equinor/fusion-react-searchable-dropdown" "^0.1.2"
+    "@equinor/fusion-react-utils" "^2.0.3"
+
+"@equinor/fusion-react-searchable-dropdown@^0.1.2":
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/@equinor/fusion-react-searchable-dropdown/-/fusion-react-searchable-dropdown-0.1.2.tgz#18632855828de030a647e932965aa349b8d1a82f"
+  integrity sha512-Ffg8fX8kCC16ubmeUgv9zxgQAHsnwEPZkKYzB3uUcjLF/Fffl+2HkNXUb7YaGqHsF8iyiqKn3q8Zrkfz6eJGAg==
   dependencies:
     "@equinor/fusion-react-utils" "^2.0.3"
-    "@equinor/fusion-wc-searchable-dropdown" "^0.2.0"
+    "@equinor/fusion-wc-searchable-dropdown" "^0.3.1"
 
 "@equinor/fusion-react-styles@^0.5.5":
   version "0.5.5"
@@ -301,7 +309,7 @@
   resolved "https://registry.yarnpkg.com/@equinor/fusion-wc-core/-/fusion-wc-core-1.0.5.tgz#46db3a53bd4b4dbed32887c1a7e25104b4a7493b"
   integrity sha512-VKvsJQqiyBjz/qTGirSiJDrwHYc0rXyIXa5VtaGkeQ13bSxrGM1djOwvqMjkeNh+zImBR27yDqqBz+8zvBIxvw==
 
-"@equinor/fusion-wc-divider@^0.2.17":
+"@equinor/fusion-wc-divider@^0.2.16", "@equinor/fusion-wc-divider@^0.2.17":
   version "0.2.17"
   resolved "https://registry.yarnpkg.com/@equinor/fusion-wc-divider/-/fusion-wc-divider-0.2.17.tgz#7267be5d3ab7c589e70f0a8f834cbfe263732a51"
   integrity sha512-zLVJODejRkKYN6HenOGw8n41huMAnpUf3Q2GvKfZD/cnano7OTUsK8RJ5Zrin06nlAbJ9XXUNUn1oRn7cTKo3w==
@@ -318,10 +326,10 @@
     "@equinor/fusion-wc-core" "^1.0.5"
     lit "2.4.1"
 
-"@equinor/fusion-wc-list@^0.2.2":
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/@equinor/fusion-wc-list/-/fusion-wc-list-0.2.2.tgz#186adaa932b86ddc1b2ac7ede04d601232ef7cc4"
-  integrity sha512-F3peG2nV/sfzOQRrBXeHIngcyB1MjRH4A2dDxR4fXP8sN9Q6jmzGnWSoEiLChSPsAtW1jyRB5lKwk4N7WS4jfA==
+"@equinor/fusion-wc-list@^0.3.0":
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/@equinor/fusion-wc-list/-/fusion-wc-list-0.3.0.tgz#6634e224523941d5d1fed1d986d82dd063b0c4e9"
+  integrity sha512-Z4xpE+OvJyml3U0e5ixUx1DL61+YeVvallzEGw8BA7lQLkDgatJdUAtiaTSw+Q1h++gSN/Vjjo247xyWyBybSw==
   dependencies:
     "@equinor/fusion-wc-checkbox" "^0.3.11"
     "@equinor/fusion-wc-core" "^1.0.5"
@@ -340,16 +348,20 @@
     "@material/mwc-radio" "^0.27.0"
     lit "2.4.1"
 
-"@equinor/fusion-wc-searchable-dropdown@^0.2.0":
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/@equinor/fusion-wc-searchable-dropdown/-/fusion-wc-searchable-dropdown-0.2.1.tgz#488dd6c88208d7f3a96d2bd1e00df69f29904dae"
-  integrity sha512-Cok+plO+vqsXrVLfMO/TOo9E30oYInV3rZt+Ky8khUmKMOCxG+CIhrPJp3XnPBgZ3klhcgSYdclsC9+V/CrHHg==
+"@equinor/fusion-wc-searchable-dropdown@^0.3.1":
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/@equinor/fusion-wc-searchable-dropdown/-/fusion-wc-searchable-dropdown-0.3.1.tgz#0cc52ca1561305fb9d425e3a3c97484211d42a43"
+  integrity sha512-UW60Wn+K8Kw2IFGQIquHJFxSv28RF+iH5hNxumscnjYGQf3GCZOZCDzOjFoDHQi7Gc0ZYpkIZ5vqcm4r/bpeSQ==
   dependencies:
     "@equinor/fusion-wc-core" "^1.0.5"
-    "@equinor/fusion-wc-list" "^0.2.2"
+    "@equinor/fusion-wc-divider" "^0.2.16"
+    "@equinor/fusion-wc-icon" "^1.0.26"
+    "@equinor/fusion-wc-list" "^0.3.0"
     "@equinor/fusion-wc-textinput" "^0.5.14"
     "@lit-labs/task" "^2.0.0"
+    "@types/uuid" "^8.3.4"
     lit "2.4.1"
+    uuid "^9.0.0"
 
 "@equinor/fusion-wc-textinput@^0.5.14":
   version "0.5.14"
@@ -817,7 +829,7 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react@*", "@types/react@^18.0.24":
+"@types/react@*", "@types/react@^18.0.25":
   version "18.0.25"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-18.0.25.tgz#8b1dcd7e56fe7315535a4af25435e0bb55c8ae44"
   integrity sha512-xD6c0KDT4m7n9uD4ZHi02lzskaiqcBxf4zi+tXZY98a04wvc0hi/TcCPC2FOESZi51Nd7tlUeOJY8RofL799/g==
@@ -835,6 +847,11 @@
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/@types/trusted-types/-/trusted-types-2.0.2.tgz#fc25ad9943bcac11cceb8168db4f275e0e72e756"
   integrity sha512-F5DIZ36YVLE+PN+Zwws4kJogq47hNgX3Nx6WyDJ3kcplxyke3XIzB8uK5n/Lpm1HBsbGzd6nmGehL8cPekP+Tg==
+
+"@types/uuid@^8.3.4":
+  version "8.3.4"
+  resolved "https://registry.yarnpkg.com/@types/uuid/-/uuid-8.3.4.tgz#bd86a43617df0594787d38b735f55c805becf1bc"
+  integrity sha512-c/I8ZRb51j+pYGAu5CrFMRxqZ2ke4y2grEBO5AUjgSkSk+qT2Ea+OdWElz/OiMf5MNpn2b17kuVBwZLQJXzihw==
 
 "@vitejs/plugin-react@^2.2.0":
   version "2.2.0"
@@ -1414,6 +1431,11 @@ update-browserslist-db@^1.0.9:
   dependencies:
     escalade "^3.1.1"
     picocolors "^1.0.0"
+
+uuid@^9.0.0:
+  version "9.0.0"
+  resolved "https://registry.yarnpkg.com/uuid/-/uuid-9.0.0.tgz#592f550650024a38ceb0c562f2f6aa435761efb5"
+  integrity sha512-MXcSTerfPa4uqyzStbRoTgt5XIe3x5+42+q1sDuy3R5MDk66URdLMOZe5aPX/SQd+kuYAh0FdP/pO28IkQyTeg==
 
 vite@^3.2.3:
   version "3.2.3"

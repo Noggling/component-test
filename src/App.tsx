@@ -1,8 +1,9 @@
-import SearchableDropdown from '@equinor/fusion-react-searchable-dropdown';
+import ContextSelector, { ContextResult } from '@equinor/fusion-react-context-selector';
 
 import { useCallback, useState } from 'react';
 
-import { theme, ThemeProvider } from '@equinor/fusion-react-styles';
+import { ThemeProvider, theme } from '@equinor/fusion-react-styles';
+ThemeProvider;
 
 const singleItem = (props: unknown) => {
   return Object.assign({ id: '0', title: 'Dummy title' }, props);
@@ -58,7 +59,7 @@ const fakeApi = (query: string) => {
   return items;
 };
 
-export const resolder = {
+export const resolver = {
   searchQuery: async (query: string) => {
     try {
       return fakeApi(query);
@@ -89,15 +90,15 @@ function App() {
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
+          width: '480px',
           height: '250px',
           padding: '5rem',
         }}
       >
-        <SearchableDropdown
-          onAction={onAction}
-          resolver={resolder}
+        <ContextSelector
           placeholder="dette er en test"
           initialText="hello"
+          resolver={resolver}
         />
         <div>{txt}</div>
       </div>
